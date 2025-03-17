@@ -193,3 +193,6 @@ C:\LAVORO\Repository GitHub\Lavoro-OSL\File_Clienti\BRUNINI\{SVILUPPO}\OSLCsvPro
 C:\LAVORO\Repository GitHub\Lavoro-OSL\File_Clienti\BRUNINI\{SVILUPPO}\OSLCsvProcessorApp\OSLCsvProcessorApp\obj\Debug\net9.0\OSLCsvPr.B4608ECA.Up2Date
 C:\LAVORO\Repository GitHub\Lavoro-OSL\File_Clienti\BRUNINI\{SVILUPPO}\OSLCsvProcessorApp\OSLCsvProcessorApp\obj\Debug\net9.0\OSLCsvProcessorApp.genruntimeconfig.cache
 C:\LAVORO\Repository GitHub\Lavoro-OSL\File_Clienti\BRUNINI\{SVILUPPO}\OSLCsvProcessorApp\OSLCsvProcessorApp\obj\Debug\net9.0\ref\OSLCsvProcessorApp.dll
+C:\LAVORO\Repository GitHub\Lavoro-OSL\File_Clienti\BRUNINI\{SVILUPPO}\OSLCsvProcessorApp\OSLCsvProcessorApp\bin\Debug\net9.0\Polly.dll
+C:\LAVORO\Repository GitHub\Lavoro-OSL\File_Clienti\BRUNINI\{SVILUPPO}\OSLCsvProcessorApp\OSLCsvProcessorApp\bin\Debug\net9.0\Polly.Core.dll
+C:\LAVORO\Repository GitHub\Lavoro-OSL\File_Clienti\BRUNINI\{SVILUPPO}\OSLCsvProcessorApp\OSLCsvProcessorApp\bin\Debug\net9.0\appsettings.json

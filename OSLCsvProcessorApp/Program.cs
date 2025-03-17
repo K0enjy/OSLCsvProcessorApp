@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using static CsvParser;
-using static DatabaseService;
+using static DatabaseRepository;
 using static FileMonitorService;
 using static FileService;
 using static ProcessingService;
@@ -29,7 +29,7 @@ public class Program
 		}
 		catch (Exception ex)
 		{
-			Log.Fatal(ex, "CsvProcessorApp terminated unexpectedly.");
+			Log.Error(ex, "CsvProcessorApp terminated unexpectedly." + ex.Message);
 		}
 		finally
 		{
@@ -40,32 +40,43 @@ public class Program
 	}
 
 	public static IHostBuilder CreateHostBuilder(string[] args) =>
-		Host.CreateDefaultBuilder(args)
-			.UseWindowsService()
-			.UseSerilog() // Integra Serilog come provider di logging
-			.ConfigureServices((context, services) =>
+	Host.CreateDefaultBuilder(args)
+		.UseWindowsService()
+		.UseSerilog()
+		.ConfigureServices((context, services) =>
+		{
+			IConfiguration config = new ConfigurationBuilder()
+				.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+				.Build();
+
+			Log.Logger = new LoggerConfiguration()
+				.ReadFrom.Configuration(config)
+				.CreateLogger();
+
+			// **💡 Carichiamo AppConfig PRIMA di qualsiasi altra cosa**
+			var appConfig = AppConfig.LoadConfig();
+			services.AddSingleton(appConfig);  // 🔹 Ora AppConfig è registrato correttamente
+
+			// **💡 Registriamo Settings e DatabaseContext DOPO AppConfig**
+			var settings = Settings.LoadSettings();
+			services.AddSingleton(settings);
+			services.AddSingleton<IDatabaseContext, DatabaseContext>();
+
+			services.AddSingleton<IDatabaseRepository, DatabaseRepository>();
+
+			// **💡 Registriamo FileMonitorService DOPO AppConfig**
+			services.AddSingleton<IFileMonitorService, FileMonitorService>();
+
+			services.AddSingleton<IProcessingService, ProcessingService>();
+			services.AddSingleton<IFileService, FileService>();
+			services.AddSingleton<ICsvParser, CsvParser>();
+
+			services.AddLogging(loggingBuilder =>
 			{
-				// Carichiamo la configurazione da appsettings.json
-				IConfiguration config = new ConfigurationBuilder()
-					.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-					.Build();
-
-				// Inizializziamo Serilog leggendo da appsettings.json
-				Log.Logger = new LoggerConfiguration()
-					.ReadFrom.Configuration(config)
-					.CreateLogger();
-
-				// Carichiamo le impostazioni globali
-				settings = Settings.LoadSettings();
-
-				services.AddTransient<IDatabaseContext, DatabaseContext>();
-				services.AddTransient<IDatabaseService, DatabaseService>();
-				services.AddTransient<IFileMonitorService, FileMonitorService>();
-				services.AddTransient<IProcessingService, ProcessingService>();
-				services.AddTransient<IFileService, FileService>();
-				services.AddTransient<ICsvParser, CsvParser>();
-
-				// Aggiungiamo il servizio che esegue il monitoraggio in background
-				services.AddHostedService<MonitorBackgroundService>();
+				loggingBuilder.ClearProviders();
+				loggingBuilder.AddSerilog();
 			});
+		});
+
+
 }

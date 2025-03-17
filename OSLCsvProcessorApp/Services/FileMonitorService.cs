@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using static ProcessingService;
@@ -9,7 +10,7 @@ public class FileMonitorService : FileMonitorService.IFileMonitorService
 {
 	public interface IFileMonitorService
 	{
-		void StartMonitoring();
+		Task StartMonitoringAsync();
 		void StopMonitoring();
 	}
 
@@ -25,19 +26,19 @@ public class FileMonitorService : FileMonitorService.IFileMonitorService
 		_logger = logger;
 	}
 
-	public void StartMonitoring()
+	public async Task StartMonitoringAsync()
 	{
 		_logger.LogInformation($"Monitoraggio avviato sulla cartella: {_folderPath}");
-		_timer = new Timer(CheckForNewFiles, null, TimeSpan.Zero, TimeSpan.FromMinutes(1));
+		_timer = new Timer(async _ => await CheckForNewFilesAsync(), null, TimeSpan.Zero, TimeSpan.FromMinutes(1));
 	}
 
-	private void CheckForNewFiles(object state)
+	private async Task CheckForNewFilesAsync()
 	{
 		var files = Directory.GetFiles(_folderPath, "*.csv");
 		foreach (var file in files)
 		{
 			_logger.LogInformation($"Trovato file: {file}");
-			_processingService.ProcessFile(file);
+			await _processingService.ProcessFileAsync(file);
 		}
 	}
 

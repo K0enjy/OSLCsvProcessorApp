@@ -19,7 +19,7 @@ public class MonitorBackgroundService : BackgroundService
 	protected override Task ExecuteAsync(CancellationToken stoppingToken)
 	{
 		_logger.LogInformation("Monitor Background Service avviato.");
-		_fileMonitorService.StartMonitoring();
+		_fileMonitorService.StartMonitoringAsync();
 
 		return Task.CompletedTask;
 	}

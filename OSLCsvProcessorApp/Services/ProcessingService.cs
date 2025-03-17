@@ -1,36 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using static CsvParser;
-using static DatabaseService;
+using static DatabaseRepository;
 using static FileService;
 
 public class ProcessingService : ProcessingService.IProcessingService
 {
 	public interface IProcessingService
 	{
-		void ProcessFile(string filePath);
+		Task ProcessFileAsync(string filePath);
 	}
 
 	private readonly ICsvParser _csvParser;
-	private readonly IDatabaseService _databaseService;
+	private readonly IDatabaseRepository _databaseRepository;
 	private readonly IFileService _fileService;
 	private readonly ILogger<ProcessingService> _logger;
 
 	public ProcessingService(
 		ICsvParser csvParser,
-		IDatabaseService databaseService,
+		IDatabaseRepository databaseRepository,
 		IFileService fileService,
 		ILogger<ProcessingService> logger)
 	{
 		_csvParser = csvParser;
-		_databaseService = databaseService;
+		_databaseRepository = databaseRepository;
 		_fileService = fileService;
 		_logger = logger;
 	}
 
-	public void ProcessFile(string filePath)
+	public async Task ProcessFileAsync(string filePath)
 	{
 		try
 		{
@@ -54,18 +54,18 @@ public class ProcessingService : ProcessingService.IProcessingService
 			_logger.LogInformation($"Trovato barcode di fase: {barcode}");
 
 			// Creazione della raccolta dati
-			int idRaccoltaDati = _databaseService.CreateRaccoltaDatiTestata(barcode);
+			int idRaccoltaDati = _databaseRepository.CreateRaccoltaDatiTestata(barcode);
 			_logger.LogInformation($"Raccolta dati creata con ID: {idRaccoltaDati}");
 
 			// Creazione del dettaglio della raccolta dati
-			int idDettaglio = _databaseService.CreateRaccoltaDatiDettaglio(idRaccoltaDati, barcode);
+			int idDettaglio = _databaseRepository.CreateRaccoltaDatiDettaglio(idRaccoltaDati, barcode);
 			_logger.LogInformation($"Dettaglio raccolta dati creato con ID: {idDettaglio}");
 
 			foreach (var record in records)
 			{
 				DateTime dataOra = record.Data.Add(record.Ora);
 
-				_databaseService.InsertRaccoltaDatiCicliLavorazioneMisure(
+				_databaseRepository.InsertRaccoltaDatiCicliLavorazioneMisure(
 					idDettaglio,
 					record.Caratteristiche,
 					record.NumeroMisura,

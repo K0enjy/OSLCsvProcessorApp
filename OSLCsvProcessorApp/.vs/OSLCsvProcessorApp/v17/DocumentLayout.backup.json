@@ -1,12 +1,139 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\MALAGOLI\\{SVILUPPO}\\OSLCsvProcessorApp\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\monitorbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:monitorbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\services\\filemonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:services\\filemonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\services\\processingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:services\\processingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\services\\databaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:services\\databaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\configurations\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:configurations\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\oslcsvprocessorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:oslcsvprocessorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 135,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MonitorBackgroundService.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\MonitorBackgroundService.cs",
+              "RelativeDocumentMoniker": "MonitorBackgroundService.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\MonitorBackgroundService.cs",
+              "RelativeToolTip": "MonitorBackgroundService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T10:54:25.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProcessingService.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\ProcessingService.cs",
+              "RelativeDocumentMoniker": "Services\\ProcessingService.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\ProcessingService.cs",
+              "RelativeToolTip": "Services\\ProcessingService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAgwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T10:54:03.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileMonitorService.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\FileMonitorService.cs",
+              "RelativeDocumentMoniker": "Services\\FileMonitorService.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\FileMonitorService.cs",
+              "RelativeToolTip": "Services\\FileMonitorService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAjwB8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T10:51:15.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppConfig.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Configurations\\AppConfig.cs",
+              "RelativeDocumentMoniker": "Configurations\\AppConfig.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Configurations\\AppConfig.cs",
+              "RelativeToolTip": "Configurations\\AppConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T10:51:03.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomException.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Exceptions\\CustomException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\CustomException.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Exceptions\\CustomException.cs",
+              "RelativeToolTip": "Exceptions\\CustomException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T10:50:25.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OSLCsvProcessorApp",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\OSLCsvProcessorApp.csproj",
+              "RelativeDocumentMoniker": "OSLCsvProcessorApp.csproj",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\OSLCsvProcessorApp.csproj",
+              "RelativeToolTip": "OSLCsvProcessorApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-17T10:49:57.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseRepository.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\DatabaseRepository.cs",
+              "RelativeDocumentMoniker": "Services\\DatabaseRepository.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\DatabaseRepository.cs",
+              "RelativeToolTip": "Services\\DatabaseRepository.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T10:49:43.579Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

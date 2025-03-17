@@ -29,7 +29,7 @@ public class Program
 		}
 		catch (Exception ex)
 		{
-			Log.Error(ex, "CsvProcessorApp terminated unexpectedly." + ex.Message);
+			Log.Error($"CsvProcessorApp terminated unexpectedly: {ex.Message}" );
 		}
 		finally
 		{

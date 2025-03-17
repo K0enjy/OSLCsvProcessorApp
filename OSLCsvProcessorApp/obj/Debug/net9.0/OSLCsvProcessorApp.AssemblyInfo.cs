@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OSLCsvProcessorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b2765a132356f1d471bd2a00c68d002918ff4f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe0577a827623a40bb4adb9208d9cef225413d1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("OSLCsvProcessorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OSLCsvProcessorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

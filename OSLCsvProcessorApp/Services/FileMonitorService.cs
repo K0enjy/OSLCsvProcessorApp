@@ -1,9 +1,7 @@
 ﻿using System;
 using System.IO;
-using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Configuration;
 using static ProcessingService;
 
 public class FileMonitorService : FileMonitorService.IFileMonitorService
@@ -17,34 +15,37 @@ public class FileMonitorService : FileMonitorService.IFileMonitorService
 	private readonly string _folderPath;
 	private readonly IProcessingService _processingService;
 	private readonly ILogger<FileMonitorService> _logger;
-	private Timer _timer;
+	private FileSystemWatcher _watcher;
 
-	public FileMonitorService(IProcessingService processingService, ILogger<FileMonitorService> logger, IConfiguration configuration)
+	public FileMonitorService(IProcessingService processingService, ILogger<FileMonitorService> logger, AppConfig config)
 	{
-		_folderPath = configuration["FileSettings:CsvFolder"];
+		_folderPath = config.CsvFolder;
 		_processingService = processingService;
 		_logger = logger;
 	}
 
 	public async Task StartMonitoringAsync()
 	{
-		_logger.LogInformation($"Monitoraggio avviato sulla cartella: {_folderPath}");
-		_timer = new Timer(async _ => await CheckForNewFilesAsync(), null, TimeSpan.Zero, TimeSpan.FromMinutes(1));
+		_logger.LogInformation($"Avvio monitoraggio cartella: {_folderPath}");
+
+		_watcher = new FileSystemWatcher(_folderPath)
+		{
+			Filter = "*.csv",
+			EnableRaisingEvents = true
+		};
+
+		_watcher.Created += async (s, e) => await ProcessFileAsync(e.FullPath);
 	}
 
-	private async Task CheckForNewFilesAsync()
+	private async Task ProcessFileAsync(string filePath)
 	{
-		var files = Directory.GetFiles(_folderPath, "*.csv");
-		foreach (var file in files)
-		{
-			_logger.LogInformation($"Trovato file: {file}");
-			await _processingService.ProcessFileAsync(file);
-		}
+		_logger.LogInformation($"Nuovo file rilevato: {filePath}");
+		await _processingService.ProcessFileAsync(filePath);
 	}
 
 	public void StopMonitoring()
 	{
-		_timer?.Dispose();
+		_watcher?.Dispose();
 		_logger.LogInformation("Monitoraggio interrotto.");
 	}
 }

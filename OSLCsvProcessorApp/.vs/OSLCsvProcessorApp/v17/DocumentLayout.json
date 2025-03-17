@@ -1,12 +1,156 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\services\\csvparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:services\\csvparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\exceptions\\fileprocessingexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:exceptions\\fileprocessingexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\exceptions\\csvparsingexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:exceptions\\csvparsingexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\services\\processingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:services\\processingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\services\\filemonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:services\\filemonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\configurations\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:configurations\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|c:\\lavoro\\repository github\\lavoro-osl\\file_clienti\\brunini\\{sviluppo}\\oslcsvprocessorapp\\oslcsvprocessorapp\\exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79CCC2D6-D6CC-43FC-A8CD-016368EFA8EB}|OSLCsvProcessorApp.csproj|solutionrelative:exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 135,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileProcessingException.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Exceptions\\FileProcessingException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\FileProcessingException.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Exceptions\\FileProcessingException.cs",
+              "RelativeToolTip": "Exceptions\\FileProcessingException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:11:13.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CsvParsingException.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Exceptions\\CsvParsingException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\CsvParsingException.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Exceptions\\CsvParsingException.cs",
+              "RelativeToolTip": "Exceptions\\CsvParsingException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:11:02.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CsvParser.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\CsvParser.cs",
+              "RelativeDocumentMoniker": "Services\\CsvParser.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\CsvParser.cs",
+              "RelativeToolTip": "Services\\CsvParser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:10:36.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProcessingService.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\ProcessingService.cs",
+              "RelativeDocumentMoniker": "Services\\ProcessingService.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\ProcessingService.cs",
+              "RelativeToolTip": "Services\\ProcessingService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADgvxcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:09:53.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-17T11:09:51.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileMonitorService.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\FileMonitorService.cs",
+              "RelativeDocumentMoniker": "Services\\FileMonitorService.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Services\\FileMonitorService.cs",
+              "RelativeToolTip": "Services\\FileMonitorService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:09:45.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppConfig.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Configurations\\AppConfig.cs",
+              "RelativeDocumentMoniker": "Configurations\\AppConfig.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Configurations\\AppConfig.cs",
+              "RelativeToolTip": "Configurations\\AppConfig.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:09:34.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomException.cs",
+              "DocumentMoniker": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Exceptions\\CustomException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\CustomException.cs",
+              "ToolTip": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\Exceptions\\CustomException.cs",
+              "RelativeToolTip": "Exceptions\\CustomException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:09:20.999Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

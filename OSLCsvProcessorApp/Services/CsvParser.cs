@@ -5,7 +5,6 @@ using CsvHelper;
 using CsvHelper.Configuration;
 using System.IO;
 using System.Linq;
-using System.Formats.Asn1;
 
 public class CsvParser : CsvParser.ICsvParser
 {
@@ -16,18 +15,20 @@ public class CsvParser : CsvParser.ICsvParser
 
 	public List<CsvRecord> ParseCsv(string filePath)
 	{
-		var records = new List<CsvRecord>();
+		try
+		{
+			using var reader = new StreamReader(filePath);
+			using var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
+			{
+				Delimiter = ";",
+				HasHeaderRecord = true
+			});
 
-		using (var reader = new StreamReader(filePath))
-		using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
-		{
-			Delimiter = ";",
-			HasHeaderRecord = true
-		}))
-		{
-			records = csv.GetRecords<CsvRecord>().ToList();
+			return csv.GetRecords<CsvRecord>().ToList();
 		}
-
-		return records;
+		catch (Exception ex)
+		{
+			throw new CsvParsingException($"Errore nel parsing del file {filePath}", ex);
+		}
 	}
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gkiAIkI2hLs=",
+  "dgSpecHash": "tDEbHH2eBb0=",
   "success": true,
   "projectFilePath": "C:\\LAVORO\\Repository GitHub\\Lavoro-OSL\\File_Clienti\\BRUNINI\\{SVILUPPO}\\OSLCsvProcessorApp\\OSLCsvProcessorApp\\OSLCsvProcessorApp.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,8 @@
     "C:\\Users\\l.corsini\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.5.0\\microsoft.identitymodel.protocols.openidconnect.7.5.0.nupkg.sha512",
     "C:\\Users\\l.corsini\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.5.0\\microsoft.identitymodel.tokens.7.5.0.nupkg.sha512",
     "C:\\Users\\l.corsini\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\l.corsini\\.nuget\\packages\\polly\\8.5.2\\polly.8.5.2.nupkg.sha512",
+    "C:\\Users\\l.corsini\\.nuget\\packages\\polly.core\\8.5.2\\polly.core.8.5.2.nupkg.sha512",
     "C:\\Users\\l.corsini\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
     "C:\\Users\\l.corsini\\.nuget\\packages\\serilog.aspnetcore\\9.0.0\\serilog.aspnetcore.9.0.0.nupkg.sha512",
     "C:\\Users\\l.corsini\\.nuget\\packages\\serilog.extensions.hosting\\9.0.0\\serilog.extensions.hosting.9.0.0.nupkg.sha512",
